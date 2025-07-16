@@ -1,0 +1,139 @@
+<script>
+    let str = new String();
+    str = "Hello World!";
+
+    // anchor tag 
+
+    str.anchor(name);
+
+    console.log(str.anchor("Mysection"));
+
+    // big tag 
+
+    console.log(str.big());
+
+    // blink tag 
+
+    console.log(str.blink());
+
+    // bold tag 
+
+    console.log(str.bold());
+
+    // charCodeAt , codePointAt 
+
+    let str1 = 'AUB'
+
+    console.log(str.charCodeAt(1));
+    console.log(str.charCodeAt(2));
+
+    console.log(str.codePointAt(1));
+
+    // Concat 
+
+    console.log(str.concat());
+
+    // String 
+
+    const num = 123;
+    const str2 = String(num);  
+
+    console.log(str2);
+
+    // Fixed 
+
+    console.log(str.fixed());
+
+    // Font color
+
+    console.log(str.fontcolor("white"));
+
+    console.log(str.fontcolor("blue"));
+
+    // Font size
+
+    console.log(str.fontsize(10));
+
+    // iswellFormed 
+
+    console.log(str.isWellFormed());
+
+    // italics 
+
+    console.log(str.italics());
+
+    // link 
+    str.link(name)
+    console.log(str.link("MyLink"));
+
+    // LocleCompare
+
+    console.log(str.localeCompare());
+
+    // Match 
+    let result = str.match(/World/);
+    console.log(result);
+
+    // Normalize 
+
+    console.log(str.normalize());
+
+    // padStart 
+
+    console.log(str.padStart(20));
+
+    // padEnd 
+
+    console.log(str.padEnd(25));
+
+    // Repeat 
+
+    console.log(str.repeat(5));
+
+    // Search 
+
+    console.log(str.search('H'));
+    console.log(str.search('W'));
+
+    // Small 
+
+    console.log(str.small());
+
+    // Strike
+    
+    console.log(str.strike());
+
+    // Sub 
+
+    console.log(str.sub());
+
+    // Sup 
+
+    console.log(str.sup());
+
+    // toLocalLowerCase
+
+    console.log(str.toLocaleLowerCase());
+
+    // toLocalUpperCase 
+
+    console.log(str.toLocaleUpperCase());
+
+    // toWellFormed 
+    let invalidStr = "\uD800abc";
+    let FixedStr = invalidStr.toWellFormed();
+    console.log(FixedStr);
+
+    // trimstart OR trimend
+
+    let trimStr = "     Drashti    ";
+
+    console.log(trimStr.trimStart());
+
+    console.log(trimStr.trimEnd());
+
+    // valueof
+    let objStr = new String("Hello Drashti!");
+    console.log(objStr.valueOf());
+    
+</script>
