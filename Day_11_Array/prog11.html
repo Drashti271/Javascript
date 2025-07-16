@@ -1,0 +1,37 @@
+<script>
+    // Find Method 
+
+    let users = [
+        {
+            id : 1,
+            name : "Drashti",
+            email : "drashti@gmail.com",
+            age : 20
+        },
+        {
+            id : 2,
+            name : "Sejal",
+            email : "sejal@gmail.com",
+            age : 22
+        },
+        {
+            id : 3,
+            name : "venisha",
+            email : "venisha@gmail.com",
+            age : 21
+        },
+        {
+            id : 4,
+            name : "Nimisha",
+            email : "nimisha@gmail.com",
+            age : 30
+        },
+    ];
+    console.log(users);
+
+    let user = users.find(user => user.id === 3);
+    console.log(user);
+
+    let index = users.findIndex((index) => index.id === 3);
+    console.log(index);
+</script>
