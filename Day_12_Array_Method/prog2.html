@@ -1,0 +1,51 @@
+<script>
+    let users = [
+        {
+            id : 101,
+            name : "Drashti",
+            email : "drashti@gmail.com",
+            age : 20
+        },
+        {
+            id : 102,
+            name : "Sejal",
+            email : "sejal@gmail.com",
+            age : 25
+        },
+        {
+            id : 103,
+            name : "Nimisha",
+            email : "nimisha@gmail.com",
+            age : 27
+        },
+        {
+            id : 104,
+            name : "Venisha",
+            email : "venisha@gmail.com",
+            age : 23
+        },
+        {
+            id : 105,
+            name : "Diya",
+            email : "diya@gmail.com",
+            age : 21
+        },
+    ];
+    console.log(users);
+
+    let username = users.find(user => user.name === "Diya");
+    console.log(username);
+
+    let userid = users.find(user => user.id === 101);
+    console.log(userid);
+
+    let useremail = users.find(user => user.email === "nimisha@gmail.com");
+    console.log(useremail);
+
+    let userage = users.find(user => user.age === 25);
+    console.log(userage);
+
+    let index = users.findIndex((index) => index.id === 103);
+    console.log(index);
+
+</script>

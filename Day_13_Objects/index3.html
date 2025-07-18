@@ -1,0 +1,28 @@
+<script>
+    let user = {
+        id : 1, 
+        name : "Isha",
+        age : 19,
+        address : {
+            street : "Soniwad",
+            city : "Valsad",
+            state : "Gujarat",
+            zip : 985647
+        }
+    };
+
+    for(let key in user)
+    {
+        if(typeof user[key] === "object" && user[key] !== null)
+        {
+            for(let key2 in user[key])
+            {
+                console.log(user[key][key2]);
+            }
+        }
+        else
+        {
+            console.log(user[key]);
+        }
+    }
+</script>
