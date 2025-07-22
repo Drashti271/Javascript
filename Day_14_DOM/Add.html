@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Add Example</title>
+</head>
+<body>
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <h1 id="myHeading"></h1>
+    <button onclick="addText()">Add Name</button>
+
+    <script>
+        function addText() {
+            let first = document.getElementById("firstName").value;
+            let last = document.getElementById("lastName").value;
+            let fullName = "Full Name: " + first + " " + last;
+
+            document.getElementById("myHeading").innerText = fullName;
+
+            console.log(fullName);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table</title>
+</head>
+<body>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Mobile No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Drashti</td>
+                <td>drashti@gmail.com</td>
+                <td>20</td>
+                <td>78789 56722</td>
+            </tr>
+            <tr>
+                <td>Venisha</td>
+                <td>venisha@gmail.com</td>
+                <td>22</td>
+                <td>67834 58213</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let table = document.getElementById("myTable");
+        let rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+
+        for(let i = 0; i < rows.length; i++){
+            let cells = rows[i].getElementsByTagName("td");
+
+            let name = cells[0].textContent;
+            let email = cells[1].textContent;
+            let age = cells[2].textContent;
+            let mobileno = cells[3].textContent;
+
+            console.log("Name: " + name + " | Email: " + email + " | Age: " + age + " | Mobile No: " + mobileno);
+        }
+
+    </script>
+</body>
+</html>

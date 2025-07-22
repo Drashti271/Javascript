@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Viewer</title>
+</head>
+<body>
+    <h2 id="quoteDisplay" name="quote">Click the button to see a quote</h2>
+    <button type="button" onclick="showQuote()">Show Quote</button>
+
+    <script>
+        let quotes = [
+            "Believe in yourself.",
+            "Never give up.",
+            "Dream big and dare to fail.",
+            "Push yourself, because no one else is going to do it for you.",
+            "Stay positive. Work hard. Make it happen."
+        ];
+
+        let index = 0;
+
+        function showQuote() {
+            document.getElementById("quoteDisplay").innerText = quotes[index];
+            index++;
+            
+            if(index >= quotes.length)
+            {
+                index = 0;
+            }
+        }
+        
+    </script>
+</body>
+</html>

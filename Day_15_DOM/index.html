@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">Login</h2>
+    <button class="login" onclick="changeTitle()">Login</button>
+
+    <script>
+        let title = document.getElementById("title");
+
+        let login = document.getElementsByClassName("login")[0];
+        console.log(login);
+
+        function changeTitle () {
+            title.textContent = "You are logged in.";
+        }
+
+    </script>
+</body>
+</html>

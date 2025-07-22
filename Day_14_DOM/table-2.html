@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Table</title>
+</head>
+<body>
+
+  <table id="myTable" border="1" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Mobile No.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr contenteditable="true">
+        <td>Drashti</td>
+        <td>drashti@gmail.com</td>
+        <td>20</td>
+        <td>78789 56722</td>
+      </tr>
+      <tr contenteditable="true">
+        <td>Venisha</td>
+        <td>venisha@gmail.com</td>
+        <td>22</td>
+        <td>67834 58213</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button onclick="saveData()">Save</button>
+
+  <script>
+    function saveData() {
+      let table = document.getElementById('myTable');
+      let rows = table.tBodies[0].rows;
+
+      console.clear();
+
+      for (let i = 0; i < rows.length; i++) {
+        console.log(rows[i].innerText);
+      }
+
+      alert('Data saved!');
+    }
+  </script>
+
+</body>
+</html>
