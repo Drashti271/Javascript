@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Local Storage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <h2>Test Local Storage</h2>
+            <form action="" method="post" id="form">
+                <!-- <div class="col-6 mt-3">
+                    <label for="key" class="form-label">Key</label>
+                    <input type="text" class="form-control" name="test"/>
+                </div> -->
+                <div class="col-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="email"/>
+                </div>
+                <div class="col-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" class="form-control" name="password"/>
+                </div>
+                <div class="col-3 mt-3">
+                    <button type="submit" class="btn btn-primary">Add Data</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let form = document.querySelector('#form');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            // console.log("Hello from local storage");
+            // let test = document.querySelector('input[name = "test"]');
+            // localStorage.setItem('test',test.value);
+
+            let email = document.querySelector('input[name = "email"]');
+            localStorage.setItem('email',email.value);
+
+            let password = document.querySelector('input[name = "password"]');
+            localStorage.setItem('password',password.value);
+
+            // String 
+            // let arrStr = JSON.stringify([1,2,3,4,5]);
+            // localStorage.setItem('test',arrStr);
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
