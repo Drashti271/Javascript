@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h2>VILLA</h2>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <ul>
+                            <li>HOME</li>
+                            <li>PROPERTIES</li>
+                            <li>PROPERTY DETAILS</li>
+                            <li>CONTACT US</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <button>Schedule a Visit</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="slider h-75">
+                <div class="slide-item active">
+                    <img src="./images/1.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="./images/2.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="./images/3.jpg" alt="">
+                </div>
+                <button class="prev" onclick="prevSlide()" id="prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="next" onclick="nextSlide()" id="next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>
