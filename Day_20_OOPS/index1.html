@@ -1,0 +1,20 @@
+<script>
+    let stud = {
+        name : 'Drashti',
+        age : 20,
+        displayStud() {
+            console.log(`${this.name} ${this.age}`)
+        }
+    }
+
+    let stud1 = {
+        name : 'Diya',
+        age : 20,
+    }
+
+    stud1._proto = stud,
+
+    console.log(stud1);
+
+    stud1.displayStud();
+</script>
