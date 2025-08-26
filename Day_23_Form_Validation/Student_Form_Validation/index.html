@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 style="text-align: center; color: blueviolet;">Student Form Validation</h2>
+                <form onsubmit="registration(); return false" method="post">
+                    <div class="mb-3">
+                        <label for="StudentName" class="form-label">Student Name</label>
+                        <input type="text" name="StudentName" class="form-control form-input" id="StudentName">
+                        <span class="StudentName-message text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" name="Email" class="form-control form-input" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <span class="Email-message text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="PhoneNo" class="form-label">Phone No.</label>
+                        <input type="number" class="form-control form-input" id="PhoneNo" placeholder="+91 99999 99999" name="PhoneNo">
+                        <span class="PhoneNo-message text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Gender" class="form-label">Gender</label>
+                        <div class="form-check">
+                            <input class="form-check-input form-input" type="radio" name="Gender" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input form-input" type="radio" name="Gender" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Female
+                            </label>
+                        </div>
+                        <span class="Gender-message text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="DOB" class="form-label">Date Of Birth</label>
+                        <input type="date" class="form-control form-input" id="DOB" name="DOB">
+                        <span class="DOB-message text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="StudentID" class="form-label">StudentID</label>
+                        <input type="number" class="form-control form-input" id="StudentID" name="StudentID">
+                        <span class="StudentID-message text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Standard" class="form-label">Class/Standard</label>
+                        <input type="number" class="form-control form-input" id="Standard" name="Standard">
+                        <span class="Standard-message text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="AdmissionDate" class="form-label">Admission Date</label>
+                        <input type="date" class="form-control form-input" id="AdmissionDate" name="AdmissionDate">
+                        <span class="AdmissionDate-message text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Address" class="form-label">Address</label>
+                        <textarea name="Address" id="Address" class="form-control form-input" rows="3" cols="50" placeholder="Address"></textarea>
+                        <span class="Address-message text-danger"></span>
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
